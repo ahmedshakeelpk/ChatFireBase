@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>398476177504-bldu2jd05g74iuh3rbhlnvkkesdbuhqv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.398476177504-bldu2jd05g74iuh3rbhlnvkkesdbuhqv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCdleogwhlBxlWPDs0Sd25FZZl4XX-PWV0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>398476177504</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.QSN.Chat</string>
+	<key>PROJECT_ID</key>
+	<string>fir-d2631</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-d2631.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:398476177504:ios:296f409dc5d7464dc85305</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-d2631.firebaseio.com</string>
+</dict>
+</plist>

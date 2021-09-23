@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lxn-Nn-vPX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration-->
+        <scene sceneID="xhn-br-FKG">
+            <objects>
+                <viewController storyboardIdentifier="Registration" id="7Lr-iF-loL" customClass="Registration" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="znv-hh-LSc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycP-Sk-spL">
+                                <rect key="frame" x="20" y="121" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="CnK-hm-20y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3QL-yC-Myx" customClass="FPNTextField" customModule="FlagPhoneNumber">
+                                <rect key="frame" x="20" y="184" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="mUi-66-h4z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgl-Ke-78N">
+                                <rect key="frame" x="20" y="245" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bfx-CC-aJM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HS6-Xh-Gse">
+                                <rect key="frame" x="20" y="339" width="374" height="45"/>
+                                <color key="backgroundColor" red="0.52429056169999999" green="0.73107606169999995" blue="0.32539790870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="8Qy-IF-HCz"/>
+                                </constraints>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRegistration:" destination="7Lr-iF-loL" eventType="touchUpInside" id="GGo-Ga-UTl"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="jXD-aN-rOp">
+                                <rect key="frame" x="197" y="225" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ido-5A-CHn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HS6-Xh-Gse" firstAttribute="leading" secondItem="ido-5A-CHn" secondAttribute="leading" constant="20" id="46U-xM-6EX"/>
+                            <constraint firstItem="ycP-Sk-spL" firstAttribute="top" secondItem="ido-5A-CHn" secondAttribute="top" constant="33" id="4wL-dO-4Lh"/>
+                            <constraint firstItem="ycP-Sk-spL" firstAttribute="leading" secondItem="ido-5A-CHn" secondAttribute="leading" constant="20" id="DmK-Mn-iSE"/>
+                            <constraint firstItem="HS6-Xh-Gse" firstAttribute="top" secondItem="vgl-Ke-78N" secondAttribute="bottom" constant="49" id="ENg-7R-vV3"/>
+                            <constraint firstItem="vgl-Ke-78N" firstAttribute="leading" secondItem="ido-5A-CHn" secondAttribute="leading" constant="20" id="Ldv-LS-aC1"/>
+                            <constraint firstItem="3QL-yC-Myx" firstAttribute="top" secondItem="ycP-Sk-spL" secondAttribute="bottom" constant="18" id="Lst-j5-2YD"/>
+                            <constraint firstItem="ido-5A-CHn" firstAttribute="trailing" secondItem="3QL-yC-Myx" secondAttribute="trailing" constant="20" id="Pg5-g9-CqK"/>
+                            <constraint firstItem="ido-5A-CHn" firstAttribute="trailing" secondItem="ycP-Sk-spL" secondAttribute="trailing" constant="20" id="Rt8-Sn-OhR"/>
+                            <constraint firstItem="ido-5A-CHn" firstAttribute="trailing" secondItem="vgl-Ke-78N" secondAttribute="trailing" constant="20" id="cvu-ys-Pdv"/>
+                            <constraint firstItem="ido-5A-CHn" firstAttribute="trailing" secondItem="HS6-Xh-Gse" secondAttribute="trailing" constant="20" id="gVK-nm-e9X"/>
+                            <constraint firstItem="3QL-yC-Myx" firstAttribute="leading" secondItem="ido-5A-CHn" secondAttribute="leading" constant="20" id="koT-L8-1Wh"/>
+                            <constraint firstItem="vgl-Ke-78N" firstAttribute="top" secondItem="3QL-yC-Myx" secondAttribute="bottom" constant="16" id="nYv-9d-x87"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aum-37-LzG"/>
+                    <connections>
+                        <outlet property="andicator" destination="jXD-aN-rOp" id="ZDc-V2-dfq"/>
+                        <outlet property="btnRegistration" destination="HS6-Xh-Gse" id="Dlr-Cl-tfS"/>
+                        <outlet property="txtEmail" destination="vgl-Ke-78N" id="8QM-cj-5as"/>
+                        <outlet property="txtPhone" destination="3QL-yC-Myx" id="mRw-2p-D7g"/>
+                        <outlet property="txtUserName" destination="ycP-Sk-spL" id="Cce-zb-R8a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gq6-WW-Kj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292.753623188406" y="102.45535714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ADH-3f-3QN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lxn-Nn-vPX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N4O-CL-WU6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Lr-iF-loL" kind="relationship" relationship="rootViewController" id="6tT-Nr-Z4b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5z-My-5db" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382.60869565217394" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
